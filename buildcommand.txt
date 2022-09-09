@@ -1,1 +1,1 @@
-pyinstaller --noconfirm --onedir --console --icon "C:/Users/ssezgin/Desktop/TAYZ-main/1.ico" --no-embed-manifest  "C:/Users/ssezgin/Desktop/TAYZ-main/svchost.py"
+pyinstaller --noconfirm --onedir --console --icon "[your ico file path for exe].ico" --no-embed-manifest  "C:/Users/[your_user_name]/Desktop/TAYZ-main/svchost.py"
